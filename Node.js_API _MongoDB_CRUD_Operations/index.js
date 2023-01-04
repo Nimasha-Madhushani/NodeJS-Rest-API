@@ -1,4 +1,8 @@
-const express=require('express')
-const app=express()
+const express = require("express");
+const bodyParser = require("body-parser");
+const app = express();
 
-app.listen(3000,()=>console.log('Server is started on 3000'))
+//middleware
+app.use(bodyParser.json());
+
+app.listen(3000, () => console.log("Server is started on 3000"));
