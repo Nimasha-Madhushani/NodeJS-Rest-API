@@ -7,7 +7,7 @@ const app = express();
 //middleware
 app.use(bodyParser.json());
 
-app.use('./api/employee',employeeRoutes)
+app.use('/api/employees',employeeRoutes)
 
 dbConnection()
   .then(() => {
